@@ -1,0 +1,11 @@
+﻿<Window x:Class="Olimpian_Games.CountryInputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CountryInputWindow" Height="150" Width="300">
+    <Grid>
+        <Label Content="Країна" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="countryTextBox" HorizontalAlignment="Left" Height="23" Margin="120,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="okButton" Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="OkButton_Click"/>
+    </Grid>
+</Window>

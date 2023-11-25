@@ -1,0 +1,40 @@
+﻿<Window x:Class="Olimpian_Games.EditParticipantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpian_Games"
+        mc:Ignorable="d"
+        Title="EditParticipantWindow" Height="350" Width="300">
+    <Grid>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="firstNameTextBox" HorizontalAlignment="Left" Height="23" Margin="120,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Прізвище" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="lastNameTextBox" HorizontalAlignment="Left" Height="23" Margin="120,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Країна" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="countryTextBox" HorizontalAlignment="Left" Height="23" Margin="120,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Дата народження" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="birthDatePicker" HorizontalAlignment="Left" Margin="120,132,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Спорт" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="sportTextBox" HorizontalAlignment="Left" Height="23" Margin="120,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="Медаль" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="medalComboBox" HorizontalAlignment="Left" Height="23" Margin="120,212,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Gold" />
+            <ComboBoxItem Content="Silver" />
+            <ComboBoxItem Content="Bronze" />
+            <ComboBoxItem Content="Нет" />
+        </ComboBox>
+
+        <Label Content="Рік олімпіади" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="olympiadYearTextBox" HorizontalAlignment="Left" Height="23" Margin="120,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Button x:Name="editButton" Content="Edit" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="75" Click="EditButton_Click"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="CancelButton_Click"/>
+    </Grid>
+</Window>
+

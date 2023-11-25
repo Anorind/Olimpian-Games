@@ -1,0 +1,18 @@
+﻿<Window x:Class="Olimpian_Games.StatsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpian_Games"
+        mc:Ignorable="d"
+        Title="StatsWindow" Height="200" Width="300">
+    <StackPanel>
+        <Button x:Name="MedalTableButton" Content="Кількість медалей у країни за всю історію" Click="MedalTableButton_Click"/>
+        <Button x:Name="MedalistsButton" Content=" Медалісти та їх вид спорту" Click="MedalistsButton_Click"/>
+        <Button x:Name="MostGoldMedalsButton" Content="Країна яка зібрала найбільше золотих медалей" Click="MostGoldMedalsButton_Click"/>
+        <Button x:Name="MostGoldMedalsInSportButton" Content="Спорт який зібрав найбільшу кількість медалей" Click="MostGoldMedalsInSportButton_Click"/>
+        <Button x:Name="MostHostedOlympiadsButton" Content="Олімпіада з найбільшими спортивними змаганнями" Click="MostHostedOlympiadsButton_Click"/>
+        <Button x:Name="TeamCompositionButton" Content="Склад олімпійської збірної за всю історію" Click="TeamCompositionButton_Click"/>
+        <Button x:Name="CountryStatsButton" Content="Статистика країни за всю історію" Click="CountryStatsButton_Click"/>
+    </StackPanel>
+</Window>
